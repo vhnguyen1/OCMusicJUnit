@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static junit.framework.Assert.*;
 
-/**
- * Created by vnguyen629 on 11/22/2016.
- */
 public class MusicEventTest {
 
     private MusicEvent mMusicEvent;
@@ -17,6 +14,12 @@ public class MusicEventTest {
     public void setUp() throws Exception {
         mMusicEvent = new MusicEvent();
         mMusicEvent.setTitle("Test Title");
+        mMusicEvent.setTitle("Test Date");
+        mMusicEvent.setTitle("Test Time");
+        mMusicEvent.setTitle("Test Location");
+        mMusicEvent.setTitle("Test Address 1");
+        mMusicEvent.setTitle("Test Address 2");
+        mMusicEvent.setTitle("Test Image Name");
     }
 
     @After
@@ -30,78 +33,37 @@ public class MusicEventTest {
     }
 
     @Test
-    public void setTitle() throws Exception {
-
-    }
-
-    @Test
     public void getDate() throws Exception {
-
-    }
-
-    @Test
-    public void setDate() throws Exception {
-
+        assertEquals("Test Date", mMusicEvent.getDate());
     }
 
     @Test
     public void getDay() throws Exception {
-
-    }
-
-    @Test
-    public void setDay() throws Exception {
-
+        assertEquals("Test Day", mMusicEvent.getDay());
     }
 
     @Test
     public void getTime() throws Exception {
-
-    }
-
-    @Test
-    public void setTime() throws Exception {
-
+        assertEquals("Test Time", mMusicEvent.getTime());
     }
 
     @Test
     public void getLocation() throws Exception {
-
-    }
-
-    @Test
-    public void setLocation() throws Exception {
-
+        assertEquals("Test Location", mMusicEvent.getLocation());
     }
 
     @Test
     public void getAddress1() throws Exception {
-
-    }
-
-    @Test
-    public void setAddress1() throws Exception {
-
+        assertEquals("Test Address 1", mMusicEvent.getAddress1());
     }
 
     @Test
     public void getAddress2() throws Exception {
-
-    }
-
-    @Test
-    public void setAddress2() throws Exception {
-
+        assertEquals("Test Address 2", mMusicEvent.getAddress2());
     }
 
     @Test
     public void getImageName() throws Exception {
-
+        assertEquals("Test Image Name", mMusicEvent.getImageName());
     }
-
-    @Test
-    public void setImageName() throws Exception {
-
-    }
-
 }
